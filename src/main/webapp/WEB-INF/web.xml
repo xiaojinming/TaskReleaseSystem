@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.trs.web.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.trs.web.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PersonInformation</servlet-name>
+        <servlet-class>com.trs.web.PersonInformation</servlet-class>
+    </servlet>
+    <servlet>
+        <description>This is the description of my J2EE component</description>
+        <display-name>This is the display name of my J2EE component</display-name>
+        <servlet-name>findPassServlet</servlet-name>
+        <servlet-class>com.trs.web.findPassServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>mainPage</servlet-name>
+        <servlet-class>com.trs.web.mainPage</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TaskSearch</servlet-name>
+        <servlet-class>com.trs.web.TaskSearch</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TaskAdd</servlet-name>
+        <servlet-class>com.trs.web.TaskAdd</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ImageServlet</servlet-name>
+        <servlet-class>com.trs.web.ImageServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>exitUser</servlet-name>
+        <servlet-class>com.trs.web.exitUser</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TaskUpdata</servlet-name>
+        <servlet-class>com.trs.web.TaskUpdata</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>getLastTask</servlet-name>
+        <servlet-class>com.trs.web.getLastTask</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>getCurrentTask</servlet-name>
+        <servlet-class>com.trs.web.getCurrentTask</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddAttention</servlet-name>
+        <servlet-class>com.trs.web.AddAttention</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ResetTask</servlet-name>
+        <servlet-class>com.trs.web.ResetTask</servlet-class>
+    </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <filter>
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <filter-class>com.trs.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+
+
+
+    <filter-mapping>
+        <filter-name>CharacterEncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+        <dispatcher>FORWARD</dispatcher>
+    </filter-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PersonInformation</servlet-name>
+        <url-pattern>/PersonInformation</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>findPassServlet</servlet-name>
+        <url-pattern>/findPassServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>mainPage</servlet-name>
+        <url-pattern>/mainPage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TaskSearch</servlet-name>
+        <url-pattern>/TaskSearch</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TaskAdd</servlet-name>
+        <url-pattern>/TaskAdd</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ImageServlet</servlet-name>
+        <url-pattern>/ImageServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>exitUser</servlet-name>
+        <url-pattern>/exitUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TaskUpdata</servlet-name>
+        <url-pattern>/TaskUpdata</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>getLastTask</servlet-name>
+        <url-pattern>/getLastTask</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>getCurrentTask</servlet-name>
+        <url-pattern>/getCurrentTask</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddAttention</servlet-name>
+        <url-pattern>/AddAttention</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ResetTask</servlet-name>
+        <url-pattern>/ResetTask</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
+
